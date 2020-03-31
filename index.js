@@ -50,16 +50,23 @@ console.log(challengeFive)
 //Challenge 6 
 
 function snakeCase(str) {
+  let splitStr = str.toLowerCase().split()
+  let removedSpaces = splitStr.map(eachItem => removeExtraSpaces(eachItem)).join()
+  return removedSpaces.replace(/\s/g, "_")
   //remove extra space, replace space w underscore & make all characters lowercase
-  return str.map(eachItem => removeExtraSpaces(eachItem))
+  // console.log(str.map(eachItem => removeExtraSpaces(eachItem)))
 
 }
-let challengeSix = snakeCase()
+let challengeSix = snakeCase("Testing Snake Case")
 console.log(challengeSix)
 
 //Challenge 7 
-// function camelCase() {
 
-// }
-// let challengeSeven = camelCase()
-// console.log(challengeSeven)
+function camelCase(str) {
+  //lowercases the first character of the first word. Then uppercases the first character of all other words, and removes all spaces
+  let capWords = capitalizeWords(str)
+  return capWords.replace(/\s/g, "").replace(str[0], str[0].toLowerCase())
+}
+
+let challengeSeven = camelCase("Testing The Camel Case Function")
+console.log(challengeSeven)
