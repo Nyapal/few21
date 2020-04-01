@@ -54,8 +54,6 @@ function snakeCase(str) {
   let removedSpaces = splitStr.map(eachItem => removeExtraSpaces(eachItem)).join()
   return removedSpaces.replace(/\s/g, "_")
   //remove extra space, replace space w underscore & make all characters lowercase
-  // console.log(str.map(eachItem => removeExtraSpaces(eachItem)))
-
 }
 let challengeSix = snakeCase("Testing Snake Case")
 console.log(challengeSix)
