@@ -4,17 +4,11 @@ function capitalize(str) {
   return str.replace(str[0], str[0].toUpperCase())
 }
 
-let challengeOne = capitalize('hello world')
-console.log(challengeOne)
-
 //Challenge 2
 function allCaps(str) {
   //makes all characters uppercase
   return str.toUpperCase()
 }
-
-let challengeTwo = allCaps('hello world')
-console.log(challengeTwo)
 
 //Challenge 3
 function capitalizeWords(str) {
@@ -25,9 +19,6 @@ function capitalizeWords(str) {
   return splitStr.map((str) => capitalize(str)).join(' ')
 }
 
-let challengeThree = capitalizeWords('hello from planet earth')
-console.log(challengeThree)
-
 //Challenge 4 
 function removeExtraSpaces(str) {
   // remove extra space
@@ -36,16 +27,11 @@ function removeExtraSpaces(str) {
 
 }
 
-let challengeFour = removeExtraSpaces('  hello  there   ! ')
-console.log(challengeFour)
-
 //Challenge 5
 function kabobCase(str) {
   // make all characters lowercase, remove extra spaces & replace w hyphen
   return str.toLowerCase().replace(/\s/g, "-")
 }
-let challengeFive = kabobCase('Hello Entire World')
-console.log(challengeFive)
 
 //Challenge 6 
 
@@ -55,8 +41,6 @@ function snakeCase(str) {
   return removedSpaces.replace(/\s/g, "_")
   //remove extra space, replace space w underscore & make all characters lowercase
 }
-let challengeSix = snakeCase("Testing Snake Case")
-console.log(challengeSix)
 
 //Challenge 7 
 
@@ -66,5 +50,11 @@ function camelCase(str) {
   return capWords.replace(/\s/g, "").replace(str[0], str[0].toLowerCase())
 }
 
-let challengeSeven = camelCase("Testing The Camel Case Function")
-console.log(challengeSeven)
+// EXPORTS
+module.exports.capitalize = capitalize
+module.exports.allCaps = allCaps
+module.exports.capitalizeWords = capitalizeWords
+module.exports.removeExtraSpaces = removeExtraSpaces
+module.exports.kabobCase = kabobCase
+module.exports.snakeCase = snakeCase
+module.exports.camelCase = camelCase
