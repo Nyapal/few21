@@ -15,5 +15,9 @@
     "url": "https://github.com/Nyapal/few21/issues"
   },
   "homepage": "https://github.com/Nyapal/few21#readme",
-  "description": ""
+  "description": "![npm](https://img.shields.io/npm/v/@nyapal/few) ![GitHub issues](https://img.shields.io/github/issues/nyapal/few21)",
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
 }
