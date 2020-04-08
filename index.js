@@ -45,8 +45,13 @@ function snakeCase(str) {
 function camelCase(str) {
   //lowercases the first character of the first word. Then uppercases the first character of all other words, and removes all spaces
   let capWords = capitalizeWords(str)
-  return capWords.replace(/\s/g, "").replace(str[0], str[0].toLowerCase())
+  let firstChar = capWords[0].toLowerCase()
+  let capWordsSpliced = capWords.slice(1, capWords.length).replace(/\s/g, "")
+  return firstChar + capWordsSpliced
 }
+
+let challengeSeven = camelCase("Testing The Camel Case Function")
+console.log(challengeSeven)
 
 // EXPORTS
 module.exports.capitalize = capitalize
