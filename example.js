@@ -1,22 +1,16 @@
-const stringLibrary = require('./index.js')
+/* eslint-disable no-unused-vars */
+const stringLibrary = require('./index.js');
 
-let challengeOne = stringLibrary.capitalize('hello world')
-console.log(challengeOne)
+const challengeOne = stringLibrary.capitalize('hello world');
 
-let challengeTwo = stringLibrary.allCaps('hello world')
-console.log(challengeTwo)
+const challengeTwo = stringLibrary.allCaps('hello world');
 
-let challengeThree = stringLibrary.capitalizeWords('hello from planet earth')
-console.log(challengeThree)
+const challengeThree = stringLibrary.capitalizeWords('hello from planet earth');
 
-let challengeFour = stringLibrary.removeExtraSpaces('  hello  there   ! ')
-console.log(challengeFour)
+const challengeFour = stringLibrary.removeExtraSpaces('  hello  there   ! ');
 
-let challengeFive = stringLibrary.kabobCase('Hello Entire World')
-console.log(challengeFive)
+const challengeFive = stringLibrary.kabobCase('Hello Entire World');
 
-let challengeSix = stringLibrary.snakeCase("Testing Snake Case")
-console.log(challengeSix)
+const challengeSix = stringLibrary.snakeCase('Testing Snake Case');
 
-let challengeSeven = stringLibrary.camelCase("Testing The Camel Case Function")
-console.log(challengeSeven)
+const challengeSeven = stringLibrary.camelCase('Testing The Camel Case Function');

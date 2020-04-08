@@ -22,9 +22,7 @@ function capitalizeWords(str) {
 // Challenge 4
 function removeExtraSpaces(str) {
   // remove extra space
-  return str.split(' ').filter(arrItem => arrItem !== '').join(' ');
-  // return str.trim().split(' ').map((arrItem) => arrItem.trim()).join(" ")
-
+  return str.split(' ').filter((arrItem) => arrItem !== '').join(' ');
 }
 
 // Challenge 5
